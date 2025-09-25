@@ -1,0 +1,72 @@
+:root {
+  --bg:#ffffff;
+  --accent:#cff7d9;
+  --accent-600:#8fe3a8;
+  --muted:#6b7280;
+  --card-shadow:0 6px 20px rgba(15,23,42,0.06);
+  --radius:18px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+* { box-sizing:border-box }
+body { margin:0; background:linear-gradient(180deg,var(--bg) 0%, #f9fff7 100%); color:#0f172a; }
+.container { max-width:1200px; margin:0 auto; padding:28px }
+
+/* Header */
+header { display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+.logo { display:flex; align-items:center; gap:12px }
+.logo-mark { width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-600));display:flex;align-items:center;justify-content:center;box-shadow:var(--card-shadow) }
+.logo-mark strong { font-size:20px;color:#fff }
+.nav { display:flex; gap:18px; align-items:center }
+.btn { padding:10px 16px;border-radius:12px;background:var(--accent-600);border:none;color:#063120;font-weight:600;cursor:pointer }
+.btn.ghost { background:transparent;border:1px solid rgba(6,49,32,0.06) }
+
+/* Hero */
+.hero { display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0 }
+.panel { background:rgba(255,255,255,0.8);border-radius:20px;padding:28px;box-shadow:var(--card-shadow) }
+h1 { font-size:34px;margin:0 0 12px }
+p.lead { color:var(--muted);margin:0 0 18px }
+.metrics { display:flex;gap:12px }
+.metric { background:var(--bg);padding:12px;border-radius:12px;flex:1;text-align:center }
+.metric h3 { margin:4px 0;font-size:18px }
+.metric p { margin:0;color:var(--muted);font-size:13px }
+.cta-buttons { margin-top:18px;display:flex;gap:12px }
+
+/* Trading card */
+.trade-card { background:linear-gradient(180deg,#fff,#f7fff8);border-radius:16px;padding:18px;border:1px solid rgba(6,49,32,0.03) }
+.trade-row { display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:8px }
+.symbol { font-weight:700 }
+.price { font-size:20px }
+.trade-note { margin-top:12px;font-size:13px;color:var(--muted) }
+.label { font-size:12px;color:var(--muted) }
+input, select { flex:1;padding:10px;border-radius:12px;border:1px solid rgba(6,49,32,0.06) }
+
+/* Features */
+.features { display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:36px 0 }
+.card { background:#fff;border-radius:14px;padding:18px;box-shadow:var(--card-shadow) }
+.card p { color:var(--muted) }
+
+/* Waitlist */
+.waitlist { padding:26px 0 }
+.waitlist-box { display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap }
+.waitlist-icon { width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-600)) }
+.waitlist-form { display:flex;gap:8px }
+.waitlist-form input { padding:10px;border-radius:12px;border:1px solid rgba(6,49,32,0.06) }
+
+/* Footer */
+footer { padding:28px 0;color:var(--muted);font-size:14px }
+.footer-inner { display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap }
+.brand { font-weight:700 }
+.tagline { color:var(--muted);margin-top:6px }
+.copy { color:var(--muted) }
+
+/* Responsive */
+@media (max-width:980px){
+  .hero { grid-template-columns:1fr; }
+  .features { grid-template-columns:repeat(2,1fr) }
+}
+@media (max-width:640px){
+  .features { grid-template-columns:1fr }
+  header { padding:8px 0 }
+  .logo-mark { width:40px;height:40px }
+  h1 { font-size:26px }
+}
