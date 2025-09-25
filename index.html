@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pex — Perpetual DEX</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-mark"><strong>P</strong></div>
+        <div>
+          <div style="font-weight:700">Pex</div>
+          <div style="font-size:12px;color:var(--muted)">Perpetual DEX</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#trade">Trade</a>
+        <a href="#docs">Docs</a>
+        <button class="btn">Connect Wallet</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="panel">
+        <h1>Next-gen non-custodial perpetuals — meet Pex</h1>
+        <p class="lead">Trade perpetual contracts with hidden orders, tight spreads, and multi-chain settlement — powered by a clean, light UI and a minty fresh theme.</p>
+
+        <div class="metrics" aria-hidden>
+          <div class="metric">
+            <p>Total Volume</p>
+            <h3>$146B</h3>
+          </div>
+          <div class="metric">
+            <p>Open Interest</p>
+            <h3>$64M</h3>
+          </div>
+          <div class="metric">
+            <p>Symbols</p>
+            <h3>25</h3>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <button class="btn">Start Trading</button>
+          <button class="btn ghost">Learn More</button>
+        </div>
+      </div>
+
+      <aside class="panel trade-card" id="trade">
+        <div class="trade-row">
+          <div>
+            <div class="label">Market</div>
+            <div class="symbol">BTC-PERP</div>
+          </div>
+          <div style="text-align:right">
+            <div class="label">Mark Price</div>
+            <div class="price">$43,210</div>
+          </div>
+        </div>
+        <div class="trade-row">
+          <input placeholder="Order size" />
+          <select>
+            <option>Limit</option>
+            <option>Market</option>
+            <option>Hidden</option>
+          </select>
+        </div>
+        <div class="trade-row">
+          <button class="btn">Buy</button>
+          <button class="btn ghost">Sell</button>
+        </div>
+        <div class="trade-note">Slippage • Leverage up to 100× • Non-custodial</div>
+      </aside>
+    </section>
+
+    <section id="features" class="features">
+      <div class="card">
+        <h3>Non-custodial by design</h3>
+        <p>You keep custody of your funds until orders execute. Pex interacts with on-chain contracts and wallets directly.</p>
+      </div>
+      <div class="card">
+        <h3>Hidden orders</h3>
+        <p>Limit orders that remain hidden from the public order book to help reduce predatory behavior and market impact.</p>
+      </div>
+      <div class="card">
+        <h3>Multi-chain liquidity</h3>
+        <p>Aggregate liquidity across chains for tighter spreads and deeper fills.</p>
+      </div>
+      <div class="card">
+        <h3>U.S. stocks as synthetics</h3>
+        <p>Access synthetically settled stock exposure with crypto settlement. (Note: products are derivatives, not ownership of shares.)</p>
+      </div>
+      <div class="card">
+        <h3>Transparent contracts</h3>
+        <p>Smart contracts and audits are published for community review.</p>
+      </div>
+      <div class="card">
+        <h3>Light, accessible UI</h3>
+        <p>Designed for speed and clarity — a clean white canvas with mint accents to help you focus on the market.</p>
+      </div>
+    </section>
+
+    <section class="waitlist">
+      <div class="waitlist-box">
+        <div class="waitlist-info">
+          <div class="waitlist-icon"></div>
+          <div>
+            <div class="title">Get early access</div>
+            <div class="subtitle">Join the waitlist and be first to trade new symbols.</div>
+          </div>
+        </div>
+        <div class="waitlist-form">
+          <input placeholder="email@example.com" />
+          <button class="btn">Join Waitlist</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div class="brand">Pex</div>
+          <div class="tagline">Built for traders. Designed for safety.</div>
+        </div>
+        <div class="copy">© <span id="year"></span> Pex — All rights reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
